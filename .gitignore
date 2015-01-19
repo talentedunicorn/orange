@@ -1,0 +1,10 @@
+_site
+node_modules
+**/**/.sass-cache
+/assets/css/*.css*
+
+# Optimized images
+/assets/img/*
+!/assets/img/src/
+
+/assets/js/main.min.js

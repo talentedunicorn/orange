@@ -1,0 +1,10 @@
+- id: proj1
+  title: Project 1
+  client: Client McPerson
+  url: http://mcperson-person-not-me.com
+  cover-img: assets/img/projects/proj1/cover.png
+- id: proj2
+  title: Projekt Current
+  client: Pivoting startup Inc
+  url: http://pivot-not-really-a-website.io
+  cover-img: assets/img/projects/proj2/cover.png

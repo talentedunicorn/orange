@@ -1,0 +1,55 @@
+nav
+	position: fixed
+	width: $navWidth
+	left: 50%
+	margin-left: -$navWidth/2
+	background-color: $black
+	z-index: 2
+	.nav-header
+		background-color: $orange
+		font-family: $fontFamilySecondary
+		font-weight: bold
+		text-align: center
+		span
+			display: inline-block
+			padding: 20px
+		.logo
+			@extend span
+			width: 100%
+			color: $black
+			font-size: em(32px)
+			line-height: 2
+			padding: 0
+			vertical-align: bottom
+			&:hover
+				text-decoration: none
+		.menu-label
+			background-color: $black
+			color: $orange
+			display: none
+
+		&:hover + ul 
+			display: block
+
+	ul
+		display: none
+		list-style: none
+		margin: 0
+		padding: 0
+		li
+			text-align: center
+			&:hover
+				@extend .active
+		.active
+			background: $grey
+			a
+				color: $black
+				text-decoration: none
+		a
+			display: block
+			padding: 20px 0
+			color: $white
+
+		&:hover
+			display: block
+				

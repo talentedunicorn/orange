@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+    
+    {% if site.tagManagerID %}
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id={{site.tagManagerID}}"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{site.tagManagerID}}');</script>
+    <!-- End Google Tag Manager -->
+    {% endif %}
+    <body>
+    {% include nav.html %}
+
+    <div class="page-wrap">
+    {{ content }}  
+    </div>
+    
+    {% include footer.html %}
+
+    </body>
+{% if site.env == 'production' %}
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
+    <script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>            
+{% else %}
+    <script src="{{ "/assets/js/jquery-1.11.1.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/headroom.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/jQuery.headroom.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+{% endif %}
+</html>

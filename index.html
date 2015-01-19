@@ -1,0 +1,85 @@
+---
+layout: default
+type: home
+---
+<!-- About me section -->
+<section id="about-me">
+	<div class="row">
+		<div class="avatar">{% include avatar.html %}</div>
+
+		<p><strong>Orange</strong> is a free Open Source Jekyll theme aimed at simplicity. It comes equiped with a <a href="/blog">blog</a>, <a href="#work">project showcase</a> and <a href="#contact">contact form</a></p>
+	</div>
+</section>
+
+<!-- Work Section -->
+<section id="work">
+	<div class="row">
+		<h2 class="heading">Previous Projects</h2>
+		
+		<div class="work-container">
+			<!-- Insert project -->
+		</div>
+
+		<ul class="work-grid">
+		{% if site.data.projects %}
+
+			{% for project in site.data.projects %}
+				<li class="work-tile" style="background-image: url({{ project.cover-img || prepend: site.baseurl }});">
+					<div class="tile-text">
+						<span class="work-item-title">{{ project.title }}</span>
+						<span class="work-item-client">{{ project.client }}</span>
+					</div>
+					<a href="#{{project.id}}" class="button work-tile-link">View</a>
+				</li>
+			{% endfor %}
+
+		{% else %}
+			<li class="work-tile-placeholder row">
+				<span class="placeholder">Coming soon...</span>
+				<span class="placeholder small">Send me a message below if you have a project in mind :)</span>
+			</li>
+		{% endif %}
+		</ul>
+	</div>
+</section>
+
+<!-- Contact section -->
+{% if site.formpost %}
+<section id="contact">
+	<div class="row">
+		<h2 class="heading">Let's Communicate</h2>
+		<form id="contact-form" method="post" action="{{ site.formpost }}">
+			<ul class="form-items">
+				<li class="form-result row">
+					<span class="form-message success"><i class="icon-font icon-checkmark"></i>Thank you! I'll get back to you soon.</span>
+				</li>
+				<li>
+					<label for="contact-name">Your name is</label>
+					<input type="text" name="contact-name" id="contact-name" placeholder="e.g. Chuck Norris">
+					<span class="error-message"></span>
+				</li>
+				<li>
+					<label for="contact-email">Your email address is</label>
+					<input type="email" name="_replyto" id="contact-email" placeholder="e.g. chuck.norris@mail.com">
+					<span class="error-message"></span>
+				</li>
+				
+				<li>
+					<label for="contact-subject">You'd like to talk about</label>
+					<input type="text" name="_subject" id="contact-subject"placeholder="e.g. A new project">
+					<span class="error-message"></span>
+				</li>
+				
+				<li>
+					<label for="contact-message">Tell me more about it here</label>
+					<textarea name="contact-message" id="contact-message"rows="5" placeholder="I'll be reading this, be nice :)"></textarea>
+					<span class="error-message"></span>
+				</li>
+				<li>
+					<input type="submit" class="button" value="All done? Submit">	
+				</li>
+			</ul>
+		</form>
+	</div>
+</section>
+{% endif %}

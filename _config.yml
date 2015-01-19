@@ -1,0 +1,28 @@
+# Site settings
+title: Orange
+# email: [email address] 
+description: "Orange is a free Open Source Jekyll theme aimed at simplicity."
+avatar_path: "/assets/img/avatar.png"
+
+#url: "http://yourdomain.com"
+
+env: production # - Set 'development' or 'production'
+exclude: [node_modules/, .sass-cache/]
+
+paginate: 5
+paginate_path: "blog/:num"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+# Google Tag manager ID
+# tagManagerID: GTM-[ID] # Your tag manager container ID
+
+# Disqus settings
+# disqus_shortname: [shortname] # Disqus shortname 
+
+# Contact form post url - Where the form gets posted - Check out brace.io for free form posts http://forms.brace.io/
+# formpost: http://forms.brace.io/[email address]
+formpost: http://localhost:4000/ # For testing only

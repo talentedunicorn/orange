@@ -1,0 +1,11 @@
+<footer class="footer">
+	<ul class="row">
+		{% for account in site.data.social.footer %}
+			{% if account.name == 'twitter' %}<li><a href="{{ account.link }}" class="icon-twitter" target="_blank"></a></li> {% endif %}
+			{% if account.name == 'github' %}<li><a href="{{ account.link }}" class="icon-github" target="_blank"></a></li> {% endif %}
+			{% if account.name == 'google' %}<li><a href="{{ account.link }}" class="icon-google-plus-square" target="_blank"></a></li> {% endif %}
+			{% if account.name == 'facebook' %}<li><a href="{{ account.link }}" class="icon-facebook" target="_blank"></a></li> {% endif %}
+		{% endfor %}
+		<li class="footer-text"><small>Made with <span class="icon-favorite"></span> by <a href="#">TalentedUnicorn</a></small></li>
+	</ul>
+</footer>

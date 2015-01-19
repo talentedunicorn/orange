@@ -1,0 +1,38 @@
+---
+layout: blog
+type: blog
+blogroll: true
+---
+{% for post in paginator.posts %}
+
+<div class="post-snippet row">
+	<div class="post-date">
+		<span>{{ post.date | date: "%d %b"}}</span>
+		<span>{{ post.date | date: "%Y"}}</span>
+	</div>
+
+	<div class="post-summary">
+		<h2 class="post-header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+		<p>{{ post.snippet }} <a href="{{ post.url }}" class="post-more">...read more</a></p>
+	</div>
+</div>
+
+{% endfor %}
+
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<div class="pagination row">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path }}" class="previous icon-font icon-navigate-before"></a>
+	{% else %}
+		<a href="javascript:;" class="previous icon-font icon-navigate-before disabled"></a>
+
+	{% endif %}
+
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="next icon-font icon-navigate-next"></a>
+	{% else %}
+		<a href="javascript:;" class="next icon-font icon-navigate-next disabled"></a>
+	{% endif %}
+</div>
+{% endif %}

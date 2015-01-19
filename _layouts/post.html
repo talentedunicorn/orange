@@ -1,0 +1,39 @@
+---
+layout: blog
+---
+<div class="post-wrapper">
+<p class="post-date">{{ page.date | date: "%A, %-d %B %Y"}}</p>
+<h1 class="post-title">{{ page.title }}</h1>
+<div class="post-content">{{ content }}</div>
+
+<!-- Share -->
+{% if site.data.social.share %}
+<div class="share tc">
+    <span class="share-label tup">Share</span>
+    {% for account in site.data.social.share %}
+    	{% if account.name == 'twitter' %}<a href="https://twitter.com/share?link={{ page.url || prepend: site.baseurl | uri_escape }}{% if account.name == 'twitter' and account.via %}&via={{account.via}}{% endif %}&text={{ page.title }}" target="_blank" class="share-link"><span class="icon icon-twitter-alt"></span></a>
+    	{% endif %}
+
+    	{% if account.name == 'facebook' %}<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url || prepend: site.baseurl | uri_escape }}" target="_blank" class="share-link"><span class="icon icon-facebook-alt"></span></a>
+		{% endif %}
+
+		{% if account.name == 'google' %}<a href="https://plus.google.com/share?url={{ page.url || prepend: site.baseurl | uri_escape }}" class="share-link" target="_blank"><span class="icon icon-google-plus"></span></a>
+		{% endif %}
+
+    {% endfor %}
+</div>
+{% endif %}
+
+<!-- Next and previous page links -->
+<div class="pagination in-post">
+{% if page.previous %}
+    <a href="{{ page.previous.url }}" class="previous-page-link">{{ page.previous.title }}</a>
+{% endif %}
+
+{% if page.next %}
+    <a href="{{ page.next.url }}" class="next-page-link">{{ page.next.title }}</a>
+{% endif %}
+</div>
+
+<!-- Disqus -->
+{% include disqus.html %}
