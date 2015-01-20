@@ -3,7 +3,7 @@ layout: default
 type: home
 ---
 <!-- About me section -->
-<section id="about-me">
+<section id="about-me" class="section">
 	<div class="row">
 		<div class="avatar">{% include avatar.html %}</div>
 
@@ -12,7 +12,7 @@ type: home
 </section>
 
 <!-- Work Section -->
-<section id="work">
+<section id="work" class="section">
 	<div class="row">
 		<h2 class="heading">Previous Projects</h2>
 		
@@ -45,7 +45,7 @@ type: home
 
 <!-- Contact section -->
 {% if site.formpost %}
-<section id="contact">
+<section id="contact" class="section">
 	<div class="row">
 		<h2 class="heading">Let's Communicate</h2>
 		<form id="contact-form" method="post" action="{{ site.formpost }}">

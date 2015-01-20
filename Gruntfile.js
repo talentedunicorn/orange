@@ -4,23 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
     	pkg: grunt.file.readJSON('package.json'),
     	
-    	sass: {
-            dist: {
-                options: {
-                    style: 'expanded'
-                },
-                files: {
-                    'assets/css/main.css' : 'assets/css/sass/all.sass'
-                }
-            }
-    	},
-        cssmin: {
-            target: {
-                files: {
-                    'assets/css/main.min.css': ['assets/css/main.css', 'assets/css/vendor/*.css']
-                }
-            }
-        },
         imagemin: {
             dist: {
                 options: {
@@ -45,10 +28,6 @@ module.exports = function(grunt) {
             }
         },
     	watch: {
-            css: {
-                files: ['assets/css/**/*.sass', 'assets/css/**/*.scss'],
-                tasks: ['sass', 'cssmin']
-            },
             js: {
                 files: ['assets/js/main.js'],
                 tasks: ['jshint', 'uglify']
@@ -61,14 +40,12 @@ module.exports = function(grunt) {
     });
     
     // Load plugins
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Register tasks
-    grunt.registerTask('default', ['sass', 'cssmin', 'uglify', 'watch']);
+    grunt.registerTask('default', ['uglify', 'watch']);
     grunt.registerTask('optimize-img', ['imagemin']);
 };

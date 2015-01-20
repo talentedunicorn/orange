@@ -9,6 +9,10 @@ avatar_path: "/assets/img/avatar.png"
 env: production # - Set 'development' or 'production'
 exclude: [node_modules/, .sass-cache/]
 
+sass:
+ sass_dir: _sass
+ style: compressed
+
 paginate: 5
 paginate_path: "blog/:num"
 
