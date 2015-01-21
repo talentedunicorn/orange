@@ -4,9 +4,9 @@
 		<span class="menu-label">Menu</span>
 	</div>
 	<ul>
-		<li>{% if page.type == 'home' %}<a href="#about-me">{% else %}<a href="/">{% endif %}About Me</a></li>
-		<li>{% if page.type == 'home' %}<a href="#work">{% else %}<a href="/#work">{% endif %}Portfolio</a></li>
-		{% if site.formpost %}<li>{% if page.type == 'home' %}<a href="#contact">{% else %}<a href="/#contact">{% endif %}Contact</a></li>{% endif %}
-		<li {% if page.type == 'blog' %}class="active"{% endif %}><a href="/blog">Blog</a></li>
+		<li>{% if page.type == 'home' %}<a href="#about-me">{% else %}<a href="{{ site.url }}">{% endif %}About Me</a></li>
+		<li>{% if page.type == 'home' %}<a href="#work">{% else %}<a href="{{ site.url }}/#work">{% endif %}Portfolio</a></li>
+		{% if site.formpost %}<li>{% if page.type == 'home' %}<a href="#contact">{% else %}<a href="{{ site.url }}/#contact">{% endif %}Contact</a></li>{% endif %}
+		<li {% if page.type == 'blog' %}class="active"{% endif %}><a href="{{ site.url }}/blog">Blog</a></li>
 	</ul>
 </nav>

@@ -58,18 +58,22 @@ function work_toggle()
   {
     $('.work-tile-link').on('click', function(e){
       e.preventDefault();
-      var linkTo = $(this).attr('href');
+      var $this = $(this),
+      linkTo = $this.attr('href'),
+      site_url = $this.attr('data-siteurl');
+      console.log("Getting projects...", linkTo, site_url);
+
       // Get projects
-      get_project(linkTo.substr(1));
+      get_project(site_url, linkTo.substr(1));
 
       open_work(linkTo);
     });
   }
   
-function get_project(name) {
+function get_project(url, name) {
 	
 	var loader = '<div class="loader"><div class="innerLoader"></div></div>',
-		project = "/projects/" + name + ".html";
+		project = url + "/projects/" + name + ".html";
 
 	$('.work-container').html(loader);
 

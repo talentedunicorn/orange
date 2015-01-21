@@ -27,11 +27,11 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/jQuery.headroom.min.js"></script>
-    <script src="{{ "/assets/js/main.min.js" | prepend: site.baseurl }}"></script>            
+    <script src="{{ "/assets/js/main.min.js" | prepend: site.url }}"></script>            
 {% else %}
-    <script src="{{ "/assets/js/jquery-1.11.1.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/headroom.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/jQuery.headroom.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/assets/js/jquery-1.11.1.min.js" | prepend: site.url }}"></script>
+    <script src="{{ "/assets/js/headroom.min.js" | prepend: site.url }}"></script>
+    <script src="{{ "/assets/js/jQuery.headroom.min.js" | prepend: site.url }}"></script>
+    <script src="{{ "/assets/js/main.js" | prepend: site.url }}"></script>
 {% endif %}
 </html>

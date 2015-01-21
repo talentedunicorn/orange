@@ -4,7 +4,7 @@ title: Orange
 description: "Orange is a free Open Source Jekyll theme aimed at simplicity."
 avatar_path: "/assets/img/avatar.png"
 
-#url: "http://yourdomain.com"
+url: "http://talentedunicorn.github.io/orange"
 
 env: production # - Set 'development' or 'production'
 exclude: [node_modules/, .sass-cache/]
@@ -29,4 +29,4 @@ permalink: pretty
 
 # Contact form post url - Where the form gets posted - Check out brace.io for free form posts http://forms.brace.io/
 # formpost: http://forms.brace.io/[email address]
-formpost: http://localhost:4000/ # For testing only
+formpost: http://talentedunicorn.github.io/orange # For testing only
