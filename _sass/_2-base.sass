@@ -64,15 +64,26 @@ code
 	padding: 0 em(20px)
 	+clearfix
 	
-	.col-2
+	.col-2,
+	.col-3
+		display: block
 		float: left
+
+	.col-2
 		padding: em(10px) em(15px)
+		width: 100%
+	
+	.col-3
+		padding: 0 em(20px)
 		width: 100%
 
 	@media screen and (min-width: $large-screen)
 		.col-2
 			width: 50%
 
+		.col-3
+			width: 33.33%
+	
 .section
 	padding: 50px 0
 
