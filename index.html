@@ -49,12 +49,21 @@ type: home
 					</div>
 					<a href="#{{project.id}}" data-siteurl="{{site.url}}" class="button work-tile-link">View</a>
 				</li>
+				{% assign projects_count = forloop.length %}
 			{% endfor %}
+			
+			{% if projects_count < 4 %}
+				<li class="work-tile-placeholder row work-tile-{{ projects_count }}">
+				<!-- <li class="work-tile-placeholder row" style="width: {{ projects_count | times: 25 | minus: 100 | times: -1 }}%;"> -->
+					<span class="placeholder">Want to see your project here?</span>
+					<p class="placeholder small">Drop me a line <a href="#contact">below</a></p>
+				</li>
+			{% endif %}
 
 		{% else %}
-			<li class="work-tile-placeholder row">
-				<span class="placeholder">Coming soon...</span>
-				<span class="placeholder small">Send me a message below if you have a project in mind :)</span>
+			<li class="work-tile-placeholder row work-tile-full">
+				<span class="placeholder">Want to see your project here?</span>
+				<p class="placeholder small">Drop me a line <a href="#contact">below</a></p>
 			</li>
 		{% endif %}
 		</ul>
