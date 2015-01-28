@@ -3,7 +3,7 @@ layout: default
 type: home
 ---
 <!-- About me section -->
-<section id="about-me" class="section top-200px">
+<section id="about-me" class="section section-about top-200px">
 	<div class="row">
 		<div class="avatar">{% include avatar.html %}</div>
 
@@ -12,11 +12,11 @@ type: home
 		<div class="row">
 			<div class="col-3">
 				<h3 class="tc block">Portfolio</h3>
-				<p>The portfolio module allows you to display your past works in an elegant and responsive form. A wide variety of content can be added and styled in the module's template to fit your use.</p>
+				<p>The <a href="#work">portfolio</a> module allows display of works in an elegant and responsive form. A wide variety of content can be added and styled in the module's template to fit your use. <a href="#work">See samples</a></p>
 			</div>
 			<div class="col-3">
 				<h3 class="tc block">Contact</h3>
-				<p>The contact form module has built-in form validation using HTML5 with a JavaScript fallback and enhanced validation. The form has a completed label when the form is submitted successfully.</p>
+				<p>The <a href="#contact">contact form</a> module has built-in form validation using HTML5 with a JavaScript fallback and enhanced validation. The form has a completed label when the form is submitted successfully.</p>
 			</div>
 			<div class="col-3">
 				<h3 class="tc block">More to come...</h3>
@@ -26,7 +26,7 @@ type: home
 </section>
 
 <!-- Work Section -->
-<section id="work" class="section">
+<section id="work" class="section section-work">
 	<div class="row">
 		<h2 class="heading">Previous Projects</h2>
 		
@@ -59,7 +59,7 @@ type: home
 
 <!-- Contact section -->
 {% if site.formpost %}
-<section id="contact" class="section">
+<section id="contact" class="section section-contact">
 	<div class="row">
 		<h2 class="heading">Let's Communicate</h2>
 		<form id="contact-form" method="post" action="{{ site.formpost }}">
