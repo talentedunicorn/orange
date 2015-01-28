@@ -41,6 +41,10 @@ a
 	color: $red
 	text-decoration: none
 	
+	&:active,
+	&:visited
+		@extends a
+
 	&:hover
 		color: $blue
 
@@ -191,5 +195,3 @@ code
 // == end Alignment ==
 
 // == Helpers ==
-.top-200px
-	padding-top: em(200px)
