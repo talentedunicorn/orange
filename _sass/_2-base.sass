@@ -139,32 +139,38 @@ code
 // == end of make footer stick
 
 .footer
-	padding: em(20px)
+	padding-top: em(30px)
 	background-color: lighten($black, .7)
 	+clearfix
 	
-	ul
+	.footer-icons,
+	.footer-text
+		display: block
+
+		@media screen and (min-width: $large-screen)
+			display: inline-block
+
+	.footer-icons
 		list-style: none
+		margin: 0
 		padding: 0
 		text-align: center
 
 		@media screen and (min-width: $large-screen)
-			text-align: left
+			float: left
 		
 		li
 			display: inline
 			margin-right: 1em
 
-		.footer-text
-			color: $white
-			display: block
+	.footer-text
+		color: $white
 
-			@media screen and (min-width: $large-screen)
-				float: right
-				display: inline-block
+		@media screen and (min-width: $large-screen)
+			float: right
 
-			.icon-favorite
-				color: $red
+		.icon-favorite
+			color: $red
 
 // == end Footer section
 
