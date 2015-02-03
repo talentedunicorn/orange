@@ -7,7 +7,7 @@ snippet: Orange, an open source and free minimal Jekyll theme. It is a product o
 ---
 Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_blank"} theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
 
-## Table of contents
+<h2 class="t-underline">Table of contents</h2>
 1. [Dependencies](#dependencies)
 2. [Installation](#installation)
 3. [Configuration](#configuration)
@@ -17,7 +17,7 @@ Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_
 ### 1. Dependencies
 * [Ruby](https://www.ruby-lang.org/en/){:target='_blank'} >= 2.0.0
 * [Jekyll](http://jekyllrb.com){:target='_blank'} ~ 2.5
-* [Grunt](http://gruntjs.com/getting-started){:target='_blank'} <sup><a id="fn-1-ret" href="#fn-1">1</a></sup>
+* [Grunt](http://gruntjs.com/getting-started){:target='_blank'} *Requires npm & nodejs* <sup><a id="fn-1-ret" href="#fn-1">1</a></sup>
 
 ### 2. Installation 
 * To install the theme clone the repository
@@ -32,8 +32,17 @@ Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_
 Orange comes with a few configuration files each with their own usage
 
 #### 3.1 _config.yml
-This is the main configuration file and has the following sections 
+This is the main configuration file. Edit these sections: 
 
+* __title:__ This appears on your metadata and is part of your title tag
+* __description:__ This is part of your metatag, keep it under 150 characters for SEO
+* __avatar_path:__ The path to your avatar image
+* __url:__ Your hosting url. Change this to your hosting url e.g. *http://[your_name].github.io* OR *http://localhost:4000* when running on localhost
+* __Feature settings__
+	* __tagManagerID:__ Orange has analytics support through [Google tag manager](http://www.google.com/tagmanager){:target='_blank'}. Add your container id from tag manager here.
+	* __disqus_shortname:__ Comment support is through [Disqus](http://disqus.com). Create an account [here](https://disqus.com/admin/signup/?utm_source=New-Site) and add your shortname here. 
+	* __formpost:__ A URL where your contact form will post to. If you need a free form post service try [formspree.io](http://formspree.io)
+	
 <ol class="footnotes">
 <li id="fn-1">For development and optimizing images <a href="#fn-1-ret">&#8617;</a></li>
 </ol>
