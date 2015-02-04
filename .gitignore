@@ -1,6 +1,5 @@
 # Jekyll site files
 _site
-_config.yml
 
 # npm installed files
 node_modules
