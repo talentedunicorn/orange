@@ -12,7 +12,7 @@ Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_
 2. [Installation](#installation)
 3. [Configuration](#configuration)
     1. [_config.yml](#configyml)
-
+4. [Updates](#updates)
 
 ### 1. Dependencies
 * [Ruby](https://www.ruby-lang.org/en/){:target='_blank'} >= 2.0.0
@@ -25,8 +25,6 @@ Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_
 * Copy `config.sample.yml` to `_config.yml`
 * Open `_config.yml` and set up the necessary information
 * Open your terminal program and inside the folder run `jekyll serve`
-* To add new content; do not edit the __master__ branch as this is used to track the theme's master branch for future updates
-    * Create a new branch and checkout to it to add your content. 
 
 ### 3. Configuration
 Orange comes with a few configuration files each with their own usage
@@ -42,7 +40,14 @@ This is the main configuration file. Edit these sections:
 	* __tagManagerID:__ Orange has analytics support through [Google tag manager](http://www.google.com/tagmanager){:target='_blank'}. Add your container id from tag manager here.
 	* __disqus_shortname:__ Comment support is through [Disqus](http://disqus.com). Create an account [here](https://disqus.com/admin/signup/?utm_source=New-Site) and add your shortname here. 
 	* __formpost:__ A URL where your contact form will post to. If you need a free form post service try [formspree.io](http://formspree.io)
-	
+
+### 4. Updates
+Updates to the theme will be available by tracking this repository's master branch. To do so;
+
+* create a new branch e.g. `git branch theme` 
+* Add the theme's remote e.g. `git remote add orange git@github.com:talentedunicorn/orange.git`
+* Set the branch to track the master branch i.e. `git branch theme --set-upstream-to=orange/master`
+
 <ol class="footnotes">
 <li id="fn-1">For development and optimizing images <a href="#fn-1-ret">&#8617;</a></li>
 </ol>
