@@ -1,3 +1,6 @@
+# Temporary files
+*.swp
+
 # Jekyll site files
 _site
 
