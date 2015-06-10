@@ -7,14 +7,14 @@
   font-size: $icon-font-size
 
 @font-face
-  font-family: 'portfolio'
-  src: url('../#{$icon-font-path}/portfolio.eot?-b2kjnp')
-  src: url('../#{$icon-font-path}/portfolio.eot?#iefix-b2kjnp') format('embedded-opentype'), url('../#{$icon-font-path}/portfolio.woff?-b2kjnp') format('woff'), url('../#{$icon-font-path}/portfolio.ttf?-b2kjnp') format('truetype'), url('../#{$icon-font-path}/portfolio.svg?-b2kjnp#portfolio') format('svg')
+  font-family: 'orange'
+  src: url('../#{$icon-font-path}/orange.eot?-bizdtn')
+  src: url('../#{$icon-font-path}/orange.eot?#iefix-bizdtn') format('embedded-opentype'), url('../#{$icon-font-path}/orange.woff?-bizdtn') format('woff'), url('../#{$icon-font-path}/orange.ttf?-bizdtn') format('truetype'), url('../#{$icon-font-path}/orange.svg?-bizdtn#orange') format('svg')
   font-weight: normal
   font-style: normal
 
 [class^="icon-"], [class*=" icon-"]
-  font-family: 'portfolio'
+  font-family: 'orange'
   speak: none
   font-style: normal
   font-weight: normal
@@ -74,6 +74,12 @@
 .icon-more-vert:before
   content: "\e608"
 
+.icon-done:before
+  content: "\e600"
+
+.icon-check-box:before
+  content: "\e602"
+
 // == Alignment ==
 .tr
   text-align: right
@@ -83,9 +89,20 @@
 
 .tc
   text-align: center
+
+.tj
+  text-align: justify
 // == end Alignment ==
 
 // == Fonts styles ==
 .tup
   text-transform: uppercase
 // == end Fonts ==
+
+// == Text sizes ==
+.fs-p5
+  font-size: 100% * 0.5
+
+.fs-2
+  font-size: 100% * 2
+// == end Text sizes ==

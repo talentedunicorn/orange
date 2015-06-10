@@ -1,5 +1,11 @@
-## Orange
-Orange, an open source and free minimal [Jekyll](http://jekyllrb.com) theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
+---
+layout: post
+type: blog
+title:  "Getting started with Orange"
+date:   2015-01-29 14:01:29
+snippet: Orange, an open source and free minimal Jekyll theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme’s basic customization and settings.
+---
+Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_blank"} theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
 
 <h2 class="t-underline">Table of contents</h2>
 1. [Dependencies](#dependencies)
@@ -8,11 +14,10 @@ Orange, an open source and free minimal [Jekyll](http://jekyllrb.com) theme. It 
     1. [_config.yml](#configyml)
 4. [Updates](#updates)
 
-
 ### 1. Dependencies
-* [Ruby](https://www.ruby-lang.org/en/) >= 2.0.0
-* [Jekyll](http://jekyllrb.com) ~ 2.5
-* [Grunt](http://gruntjs.com/getting-started) *Requires npm & nodejs* <sup><a id="fn-1-ret" href="#fn-1">1</a></sup>
+* [Ruby](https://www.ruby-lang.org/en/){:target='_blank'} >= 2.0.0
+* [Jekyll](http://jekyllrb.com){:target='_blank'} ~ 2.5
+* [Grunt](http://gruntjs.com/getting-started){:target='_blank'} *Requires npm & nodejs* <sup><a id="fn-1-ret" href="#fn-1">1</a></sup>
 
 ### 2. Installation 
 * To install the theme clone the repository
@@ -32,9 +37,9 @@ This is the main configuration file. Edit these sections:
 * __avatar_path:__ The path to your avatar image
 * __url:__ Your hosting url. Change this to your hosting url e.g. *http://[your_name].github.io* OR *http://localhost:4000* when running on localhost
 * __Feature settings__
-    * __tagManagerID:__ Orange has analytics support through [Google tag manager](http://www.google.com/tagmanager). Add your container id from tag manager here.
-    * __disqus_shortname:__ Comment support is through [Disqus](http://disqus.com). Create an account [here](https://disqus.com/admin/signup/?utm_source=New-Site) and add your shortname here. 
-    * __formpost:__ A URL where your contact form will post to. If you need a free form post service try [formspree.io](http://formspree.io)
+	* __tagManagerID:__ Orange has analytics support through [Google tag manager](http://www.google.com/tagmanager){:target='_blank'}. Add your container id from tag manager here.
+	* __disqus_shortname:__ Comment support is through [Disqus](http://disqus.com). Create an account [here](https://disqus.com/admin/signup/?utm_source=New-Site) and add your shortname here. 
+	* __formpost:__ A URL where your contact form will post to. If you need a free form post service try [formspree.io](http://formspree.io)
 
 ### 4. Updates
 Updates to the theme will be available by tracking this repository's master branch. To do so;

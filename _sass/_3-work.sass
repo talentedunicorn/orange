@@ -1,6 +1,6 @@
 $work-icon-size: 30px
 
-#work
+.section-work
 	background-color: $red
 	
 	.heading
@@ -120,11 +120,25 @@ $work-icon-size: 30px
 			&:hover
 				background-color: $red
 				color: $white
+	
+	.work-tile-1,
+	.work-tile-2,
+	.work-tile-full
+		width: 100%
+	
+	@media screen and (min-width: $medium-screen)
+		.work-tile-1
+			width: 50%
+
+	@media screen and (min-width: $large-screen)
+		.work-tile-1
+			width: 75%
+
+		.work-tile-2
+			width: 50%
 
 	.work-tile-placeholder
 		@extend .work-tile
-		width: 100%
-		height: auto
 		padding: em(20px)
 
 		.placeholder

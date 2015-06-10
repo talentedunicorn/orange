@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'portfolio';
-	src:url('fonts/portfolio.eot?-b2kjnp');
-	src:url('fonts/portfolio.eot?#iefix-b2kjnp') format('embedded-opentype'),
-		url('fonts/portfolio.woff?-b2kjnp') format('woff'),
-		url('fonts/portfolio.ttf?-b2kjnp') format('truetype'),
-		url('fonts/portfolio.svg?-b2kjnp#portfolio') format('svg');
+	font-family: 'orange';
+	src:url('fonts/orange.eot?-bizdtn');
+	src:url('fonts/orange.eot?#iefix-bizdtn') format('embedded-opentype'),
+		url('fonts/orange.woff?-bizdtn') format('woff'),
+		url('fonts/orange.ttf?-bizdtn') format('truetype'),
+		url('fonts/orange.svg?-bizdtn#orange') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'portfolio';
+	font-family: 'orange';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -21,6 +21,38 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-done:before {
+	content: "\e600";
+}
+
+.icon-check-box:before {
+	content: "\e602";
+}
+
+.icon-favorite:before {
+	content: "\e604";
+}
+
+.icon-navigate-before:before {
+	content: "\e605";
+}
+
+.icon-navigate-next:before {
+	content: "\e606";
+}
+
+.icon-close:before {
+	content: "\e601";
+}
+
+.icon-more-horiz:before {
+	content: "\e607";
+}
+
+.icon-more-vert:before {
+	content: "\e608";
 }
 
 .icon-twitter-alt:before {
@@ -61,29 +93,5 @@
 
 .icon-soundcloud:before {
 	content: "\f1be";
-}
-
-.icon-favorite:before {
-	content: "\e604";
-}
-
-.icon-navigate-before:before {
-	content: "\e605";
-}
-
-.icon-navigate-next:before {
-	content: "\e606";
-}
-
-.icon-close:before {
-	content: "\e601";
-}
-
-.icon-more-horiz:before {
-	content: "\e607";
-}
-
-.icon-more-vert:before {
-	content: "\e608";
 }
 

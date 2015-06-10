@@ -176,7 +176,7 @@ function handle_form_submit()
 			function(data) // On success
 			{
 				// Clear form
-				form.find('input[type="text"], textarea').val('');
+				form.find('.form-input').val('');
 				// Re-enable submit
 				submit.attr('disabled', false);
 				submit.val(submit_test);

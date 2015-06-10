@@ -41,6 +41,10 @@ a
 	color: $red
 	text-decoration: none
 	
+	&:active,
+	&:visited
+		@extends a
+
 	&:hover
 		color: $blue
 
@@ -48,6 +52,7 @@ pre
 	padding: 10px 20px
 
 code
+	word-wrap: break-word
 	font-size: em(12px)
 	padding: em(4px) em(6px)
 	color: $white
@@ -135,32 +140,40 @@ code
 // == end of make footer stick
 
 .footer
-	padding: em(20px)
+	padding-top: em(30px)
 	background-color: lighten($black, .7)
 	+clearfix
 	
-	ul
+	.footer-icons,
+	.footer-text
+		display: block
+
+		@media screen and (min-width: $large-screen)
+			display: inline-block
+
+	.footer-icons
 		list-style: none
+		margin: 0
 		padding: 0
 		text-align: center
 
 		@media screen and (min-width: $large-screen)
-			text-align: left
+			float: left
 		
 		li
 			display: inline
-			margin-right: 1em
+			margin: 1em
 
-		.footer-text
-			color: $white
-			display: block
+	.footer-text
+		color: $white
+		margin-top: em(30px)
 
-			@media screen and (min-width: $large-screen)
-				float: right
-				display: inline-block
+		@media screen and (min-width: $large-screen)
+			float: right
+			margin-top: 0px
 
-			.icon-favorite
-				color: $red
+		.icon-favorite
+			color: $red
 
 // == end Footer section
 
@@ -191,5 +204,3 @@ code
 // == end Alignment ==
 
 // == Helpers ==
-.top-200px
-	padding-top: em(200px)

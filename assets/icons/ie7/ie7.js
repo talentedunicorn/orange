@@ -10,9 +10,17 @@
 (function() {
 	function addIcon(el, entity) {
 		var html = el.innerHTML;
-		el.innerHTML = '<span style="font-family: \'portfolio\'">' + entity + '</span>' + html;
+		el.innerHTML = '<span style="font-family: \'orange\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'icon-done': '&#xe600;',
+		'icon-check-box': '&#xe602;',
+		'icon-favorite': '&#xe604;',
+		'icon-navigate-before': '&#xe605;',
+		'icon-navigate-next': '&#xe606;',
+		'icon-close': '&#xe601;',
+		'icon-more-horiz': '&#xe607;',
+		'icon-more-vert': '&#xe608;',
 		'icon-twitter-alt': '&#xf099;',
 		'icon-facebook-alt': '&#xf09a;',
 		'icon-google-plus-square': '&#xf0d4;',
@@ -23,12 +31,6 @@
 		'icon-linkedin': '&#xf08c;',
 		'icon-github': '&#xf09b;',
 		'icon-soundcloud': '&#xf1be;',
-		'icon-favorite': '&#xe604;',
-		'icon-navigate-before': '&#xe605;',
-		'icon-navigate-next': '&#xe606;',
-		'icon-close': '&#xe601;',
-		'icon-more-horiz': '&#xe607;',
-		'icon-more-vert': '&#xe608;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),
