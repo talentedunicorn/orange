@@ -32,6 +32,9 @@ url: "http://talentedunicorn.github.io/orange"
 env: production # - Set 'development' or 'production'
 exclude: [node_modules/, .sass-cache/]
 
+# Adding gems
+gems: [jekyll-paginate]
+
 sass:
  sass_dir: _sass
  style: compressed
