@@ -32,6 +32,9 @@ formpost: http://formspree.io/orangetheme.50.talentedunicorn@spamgourmet.com
 env: production # - Set 'development' or 'production'
 exclude: [node_modules/, .sass-cache/]
 
+# Adding gems
+gems: [jekyll-paginate]
+
 sass:
  sass_dir: _sass
  style: compressed
