@@ -1,0 +1,141 @@
+// == Web fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Slab:300,700,400);
+
+// == Icon fonts
+.icon-font {
+  text-align: center;
+  src: 	url('../#{$icon-font-path}/orange.eot?-bizdtn');
+  src: 	url('../#{$icon-font-path}/orange.eot?#iefix-bizdtn') format('embedded-opentype'), 
+  		url('../#{$icon-font-path}/orange.woff?-bizdtn') format('woff'), 
+		url('../#{$icon-font-path}/orange.ttf?-bizdtn') format('truetype'), 
+		url('../#{$icon-font-path}/orange.svg?-bizdtn#orange') format('svg');
+  font-size: $icon-font-size;
+}
+
+@font-face {
+  font-family: "orange";
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], 
+[class*=" icon-"] {
+  font-family: 'orange';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-twitter-alt:before {
+  content: "\f099";
+}
+
+.icon-facebook-alt:before {
+  content: "\f09a";
+}
+
+.icon-google-plus-square:before {
+  content: "\f0d4";
+}
+
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+.icon-twitter:before {
+  content: "\f081";
+}
+
+.icon-facebook:before {
+  content: "\f082";
+}
+
+.icon-instagram:before {
+  content: "\f083";
+}
+
+.icon-linkedin:before {
+  content: "\f08c";
+}
+
+.icon-github:before {
+  content: "\f09b";
+}
+
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+
+.icon-favorite:before {
+  content: "\e604";
+}
+
+.icon-navigate-before {:before {
+  content: "\e605";
+}
+
+.icon-navigate-next:before {
+  content: "\e606";
+}
+
+.icon-close:before {
+  content: "\e601";
+}
+
+.icon-more-horiz:before {
+  content: "\e607";
+}
+
+.icon-more-vert:before {
+  content: "\e608";
+}
+
+.icon-done:before {
+  content: "\e600";
+}
+
+.icon-check-box:before {
+  content: "\e602";
+}
+
+// == Alignment ==
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+// == end Alignment ==
+
+// == Fonts styles ==
+.tup {
+  text-transform: uppercase;
+}
+// == end Fonts ==
+
+// == Text sizes ==
+.fs-p5 {
+}
+  font-size: 100% * 0.5;
+}
+
+.fs-2 {
+  font-size: 100% * 2;
+}
+// == end Text sizes ==

@@ -1,0 +1,32 @@
+// == Clearfix mixin
+@mixin clearfix {
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// == Vendor prefix mixin
+@mixin transition($value) {
+	transition: $value;
+	-o-transition: $value;
+	-moz-transition: $value;
+	-webkit-transition: $value;
+}
+
+// == Convert px to em
+@function em($px, $base: $baseFontSize) {
+	@return ($px / $base) * 1em;
+}
+
+// == Retina devices mixin
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio : 2), 
+	only screen and (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
