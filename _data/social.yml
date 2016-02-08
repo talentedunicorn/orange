@@ -5,8 +5,8 @@
 footer:
  - { name: github, link: 'https://github.com/[github_username]' }
  - { name: twitter, link: 'http://twitter.com/[twitter_username]', via: '[twitter_username]' }
- # - { name: google, link: 'https://plus.google.com/u/0/[google_plus_id]/posts' }
- # - { name: facebook, link: 'https://www.facebook.com/[username here]' }
+ - { name: google, link: 'https://plus.google.com/u/0/[google_plus_id]/posts' }
+ - { name: facebook, link: 'https://www.facebook.com/[username here]' }
 
 
 # Social sharing options
