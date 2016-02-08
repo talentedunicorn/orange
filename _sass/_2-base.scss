@@ -201,7 +201,14 @@ code {
 
     li {
       display: inline;
-      margin: 1em;
+      margin-right: 1em;
+
+	  $icon-size: 30px;
+
+	  .icon {
+		  width: $icon-size; 
+		  height: $icon-size;
+	  }
     }
   }
 
@@ -216,6 +223,11 @@ code {
 
     .icon-favorite {
       color: $red;
+
+	  .icon {
+		  width: 10px;
+		  height: 10px;
+	  }
     }
   }
 }
