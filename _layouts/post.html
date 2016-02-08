@@ -27,11 +27,11 @@ layout: blog
 <!-- Next and previous page links -->
 <div class="pagination in-post">
 {% if page.previous %}
-    <a href="{{ page.previous.url }}" class="previous-page-link">{{ page.previous.title }}</a>
+    <a href="{{ site.url }}{{ page.previous.url }}" class="previous-page-link">{{ page.previous.title }}</a>
 {% endif %}
 
 {% if page.next %}
-    <a href="{{ page.next.url }}" class="next-page-link">{{ page.next.title }}</a>
+    <a href="{{ site.url }}{{ page.next.url }}" class="next-page-link">{{ page.next.title }}</a>
 {% endif %}
 </div>
 
