@@ -1,0 +1,44 @@
+// == Web fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Slab:300,700,400);
+
+// == Icons == 
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+// == Alignment ==
+.tr {
+  text-align: right;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tj {
+  text-align: justify;
+}
+// == end Alignment ==
+
+// == Fonts styles ==
+.tup {
+  text-transform: uppercase;
+}
+// == end Fonts ==
+
+// == Text sizes ==
+.fs-p5 {
+  font-size: 100% * 0.5;
+}
+
+.fs-2 {
+  font-size: 100% * 2;
+}
+// == end Text sizes ==

@@ -1,0 +1,189 @@
+$work-icon-size: 30px;
+
+.section-work {
+  background-color: $red;
+
+  .heading {
+    color: $white;
+  }
+}
+
+.work-container {
+  background-color: $grey;
+
+  .work {
+    padding-bottom: em(100px);
+
+    .work-header-container {
+      padding: 0 em(20px);
+
+      // .work-link
+      // 	text-transform: uppercase
+      // 	line-height: 1.5
+      // 	text-align: right
+   
+    }
+
+    .work-title {
+      font-family: $fontFamilySecondary;
+      font-size: 2rem;
+      padding-right: em(10px);
+    }
+
+    .work-client {
+      color: darken($grey, 20%);
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    .close {
+      display: block;
+	  text-align: center;
+      cursor: pointer;
+	  background: $black;
+
+	  .icon {
+		  width: 2em;
+		  height: 2em;
+		  vertical-align: middle;
+		  fill: $white;
+		  padding: 5px;
+	  }
+
+    }
+  }
+}
+
+.work-grid {
+  padding: 0;
+
+  @include clearfix;
+
+  .work-tile {
+    background-color: $black;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+    height: em(200px);
+    margin: 0;
+    margin-right: em(-4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+    @media screen and (min-width: $medium-screen) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: $large-screen) {
+      width: 25%;
+    }
+
+    &:before,
+    .tile-text,
+    .work-tile-link {
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+
+      @include transition(all 800ms);
+    }
+
+    // On item hover
+    &:hover {
+      &:before,
+      .tile-text,
+      .work-tile-link {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:before {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .tile-text {
+      top: em(10px);
+      right: em(10px);
+      color: $white;
+
+      .work-item-title,
+      .work-item-client {
+        display: block;
+        text-align: right;
+      }
+
+      .work-item-title {
+        font-family: $fontFamilySecondary;
+      }
+
+      .work-item-client {
+        font-size: 80%;
+      }
+    }
+
+    .work-tile-link {
+      bottom: em(10px);
+      right: em(10px);
+      color: black;
+      text-transform: lowercase;
+      font-size: 80%;
+      background-color: $white;
+      border: none;
+
+      &:hover {
+        background-color: $red;
+        color: $white;
+      }
+    }
+  }
+
+  .work-tile-1,
+  .work-tile-2,
+  .work-tile-full {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    .work-tile-1 {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    .work-tile-1 {
+      width: 75%;
+    }
+
+    .work-tile-2 {
+      width: 50%;
+    }
+  }
+
+  .work-tile-placeholder {
+    @extend .work-tile;
+
+    padding: em(20px);
+
+    .placeholder {
+      color: $white;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .small {
+      font-size: 1em;
+      font-weight: 100;
+      font-family: $fontFamilySecondary;
+    }
+  }
+}
