@@ -118,19 +118,22 @@ $post-date-width: 60px;
 
     .share-link {
       display: inline-block;
-      margin: 0 em(5px);
-      width: $icon-font-size * 2;
-      height: auto;
-      padding: em(5px) em(10px);
       border: 1px solid $black;
       background-color: $black;
       color: $white;
+	  margin: 0 em(10px);
+
+	  .icon {
+		  width: $icon-font-size;
+		  height: $icon-font-size;
+		  margin: $icon-font-size / 2;
+	  }
 
       @include transition(all ease-in-out 0.3s);
 
       @media screen and (min-width: $rowWidth + 160px) {
         display: block;
-        margin-bottom: em(5px);
+		margin-bottom: em(20px);
       }
 
       &:hover {

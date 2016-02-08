@@ -11,13 +11,13 @@ layout: blog
 <div class="share tc">
     <span class="share-label tup">Share</span>
     {% for account in site.data.social.share %}
-    	{% if account.name == 'twitter' %}<a href="https://twitter.com/share?link={{ page.url || prepend: site.url | uri_escape }}{% if account.name == 'twitter' and account.via %}&via={{account.via}}{% endif %}&text={{ page.title }}" target="_blank" class="share-link"><span class="icon icon-twitter-alt"></span></a>
+    	{% if account.name == 'twitter' %}<a href="https://twitter.com/share?link={{ page.url || prepend: site.url | uri_escape }}{% if account.name == 'twitter' and account.via %}&via={{account.via}}{% endif %}&text={{ page.title }}" target="_blank" class="share-link"><span class="share-icon"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></span></a>
     	{% endif %}
 
-    	{% if account.name == 'facebook' %}<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url || prepend: site.url | uri_escape }}" target="_blank" class="share-link"><span class="icon icon-facebook-alt"></span></a>
+    	{% if account.name == 'facebook' %}<a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url || prepend: site.url | uri_escape }}" target="_blank" class="share-link"><span class="share-icon"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></span></a>
 		{% endif %}
 
-		{% if account.name == 'google' %}<a href="https://plus.google.com/share?url={{ page.url || prepend: site.url | uri_escape }}" class="share-link" target="_blank"><span class="icon icon-google-plus"></span></a>
+		{% if account.name == 'google' %}<a href="https://plus.google.com/share?url={{ page.url || prepend: site.url | uri_escape }}" class="share-link" target="_blank"><span class="share-icon"><svg class="icon icon-google-plus"><use xlink:href="#icon-google-plus"></use></svg></span></a>
 		{% endif %}
 
     {% endfor %}
