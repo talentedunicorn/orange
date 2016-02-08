@@ -38,15 +38,18 @@ $work-icon-size: 30px;
 
     .close {
       display: block;
-      padding: em(5px) 0;
-      font-size: 2rem;
+	  text-align: center;
       cursor: pointer;
+	  background: $black;
 
-      @include transition(background 300ms ease-in-out);
+	  .icon {
+		  width: 2em;
+		  height: 2em;
+		  vertical-align: middle;
+		  fill: $white;
+		  padding: 5px;
+	  }
 
-      &:hover {
-        background: darken($grey, 5%);
-      }
     }
   }
 }
