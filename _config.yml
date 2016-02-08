@@ -1,0 +1,47 @@
+# Title: This appears on your metadata and is part of your title tag
+# ===========
+title: Orange
+
+# Description: This is part of your metatag, keep it under 150 characters for SEO
+# =========== 
+description: "Orange is a free Open Source Jekyll theme aimed at simplicity."
+
+# Avatar path: The path to your avatar image
+# ===========
+avatar_path: "/assets/img/avatar.png"
+
+
+# Url: Your hosting url
+# Change this to your hosting url e.g. http://[your_name].github.io OR http://localhost:4000
+# ===========
+url: "http://talentedunicorn.github.io/orange"
+
+# Google Tag manager ID: Use Google Tag manager to easily manage your tracking scripts.  
+# Create a new container and add your container ID here
+# ==========
+tagManagerID: GTM-PZNT26 # Your tag manager container ID
+
+# Disqus settings: For comment support
+# ==========
+disqus_shortname: orangejekylltheme # Disqus shortname
+
+# Contact form post url - Where the form gets posted - Check out formspree.io for free form posts http://formspree.io/
+# ==========
+formpost: http://formspree.io/orangetheme.50.talentedunicorn@spamgourmet.com
+
+env: production # - Set 'development' or 'production'
+exclude: [node_modules/, .sass-cache/]
+
+# Adding gems
+gems: [jekyll-paginate]
+
+sass:
+ sass_dir: _sass
+ style: compressed
+
+paginate: 5
+paginate_path: "blog/:num"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
