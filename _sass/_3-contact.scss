@@ -87,12 +87,15 @@
         padding-top: em(10px);
         padding-bottom: em(10px);
 
-        .icon-font {
+        .icon-check {
+		  $icon-size: 30px;
           margin-right: em(10px);
           padding: em(5px);
           background-color: $color-success;
           border-radius: 50%;
-          color: $white;
+          fill: $white;
+		  width: em($icon-size);
+		  height: em($icon-size);
         }
       }
     }

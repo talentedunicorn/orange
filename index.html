@@ -81,9 +81,6 @@ type: home
 		<h2 class="heading">Let's Communicate</h2>
 		<form id="contact-form" method="post" action="{{ site.formpost }}">
 			<ul class="form-items">
-				<li class="form-result row">
-					<span class="form-message success"><i class="icon-font icon-done"></i>Thank you! I'll get back to you soon.</span>
-				</li>
 				<li>
 					<label for="contact-name">Your name is</label>
 					<input type="text" name="contact-name" id="contact-name" class="form-input" placeholder="e.g. Chuck Norris">
@@ -108,6 +105,9 @@ type: home
 				</li>
 				<li>
 					<input type="submit" class="button" value="All done? Submit">	
+				</li>
+				<li class="form-result row">
+					<span class="form-message success"><svg class="icon icon-check"><use xlink:href="#icon-check"></use></svg>Thank you! I'll get back to you soon.</span>
 				</li>
 			</ul>
 		</form>
