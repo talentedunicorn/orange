@@ -14,7 +14,7 @@ avatar_path: "/assets/img/avatar.png"
 # Url: Your hosting url
 # Change this to your hosting url e.g. http://[your_name].github.io OR http://localhost:4000
 # ===========
-url: "http://talentedunicorn.github.io/orange"
+url: "http://talentedunicorn.com/orange"
 
 # Google Tag manager ID: Use Google Tag manager to easily manage your tracking scripts.  
 # Create a new container and add your container ID here
