@@ -4,15 +4,16 @@ type: blog
 title:  "Getting started with Orange"
 date:   2015-01-29 14:01:29
 snippet: Orange, an open source and free minimal Jekyll theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme’s basic customization and settings.
-header_image: http://fakeimg.pl/1000x300/e88f0c?text=Welcome%20to%20Orange&font:lobster
+header_image: http://fakeimg.pl/1000x300/e88f0c/fff?text=A%20Quick%20Guide&font:lobster
 header_image_alt: Welcome banner
 ---
+
+Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_blank"} theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
+
 <figure class="image-figure">
 	<img src="http://jekyllrb.com/img/logo-2x.png" alt="Jekyll logo">
 	<figcaption>Jekyll logo</figcaption>
 </figure>
-
-Orange, an open source and free minimal [Jekyll](http://jekyllrb.com){:target="_blank"} theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
 
 <h2 class="t-underline">Table of contents</h2>
 1. [Dependencies](#dependencies)
