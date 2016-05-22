@@ -1,7 +1,6 @@
 <nav class="nav">
 	<div class="nav-header">
-		<a class="logo" href="javascript:;">Orange</a>
-		<span class="menu-label">Menu</span>
+    <a class="logo" href="javascript:;"><svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
 	</div>
 	<ul>
 		<li>{% if page.type == 'home' %}<a href="#about-me">{% else %}<a href="{{ site.url }}">{% endif %}About Me</a></li>
