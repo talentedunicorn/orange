@@ -1,9 +1,36 @@
 .section-about {
   padding-top: em(100px);
   line-height: 1.5;
+  background: url(../../assets/img/src/canyon.jpg) no-repeat center center/cover;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($black, .3);
+  }
+
+  .row {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    color: $white;
+  }
 
   .avatar {
     padding-top: em(50px);
     padding-bottom: em(50px);
+  }
+
+  .intro-text {
+    background: $white;
+    color: $black;
+    padding: em(20px);
   }
 }
