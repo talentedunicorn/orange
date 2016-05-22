@@ -26,6 +26,10 @@
   .avatar {
     padding-top: em(50px);
     padding-bottom: em(50px);
+    
+    img {
+      width: em(100px);
+    }
   }
 
   .intro-text {
