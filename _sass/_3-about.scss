@@ -36,5 +36,41 @@
     background: $white;
     color: $black;
     padding: em(20px);
+
+    .title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .feature {
+      background: rgba($grey, .5);
+      padding: 1em;
+      margin-bottom: 1em;
+
+
+      &:hover {
+        .block {
+          color: $orange;
+        }
+
+        .icon {
+          fill: $orange;
+        }
+      }
+    }
+
+    .block {
+      text-align: center;
+      font-size: 1em;
+      margin: 0;
+      color: rgba($black, .6);
+    }
+
+    .icon {
+      font-size: 1.5em;
+      display: block;
+      margin: auto;
+      fill: $grey;
+    }
   }
 }
