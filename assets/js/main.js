@@ -23,7 +23,7 @@ function smoothScroll (duration) {
 }
 
 function activateMenu() {
-	var nav = $('nav'),
+	var nav = $('.nav'),
 		links_list = $('.nav > ul');	
 	
 	nav.headroom({
@@ -36,7 +36,10 @@ function activateMenu() {
 		}
 	});
 
-	links_list.hide(); // To initialize hide 
+  // Hide on page click
+  $('.page-wrap').click(function() {
+    links_list.slideUp();
+  });
 
 	$('.nav-header a').on('click', {menu: links_list}, function(event){
 		$(event.data.menu).slideToggle();
