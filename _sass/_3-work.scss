@@ -2,6 +2,7 @@ $work-icon-size: 30px;
 
 .section-work {
   background-color: $red;
+  overflow: auto;
 
   .heading {
     color: $white;
@@ -9,31 +10,48 @@ $work-icon-size: 30px;
 }
 
 .work-container {
-  background-color: $grey;
+  background-color: $white;
+  position: relative;
 
   .work {
     padding-bottom: em(100px);
 
     .work-header-container {
-      padding: 0 em(20px);
+      padding: em(30px) em(20px);
+    }
 
-      // .work-link
-      // 	text-transform: uppercase
-      // 	line-height: 1.5
-      // 	text-align: right
-   
+    .work-title,
+    .work-client {
+      display: block;
     }
 
     .work-title {
-      font-family: $fontFamilySecondary;
-      font-size: 2rem;
+      // font-family: $fontFamilySecondary;
+      font-size: 2em;
+      font-weight: bold;
       padding-right: em(10px);
+      color: $black;
     }
 
     .work-client {
       color: darken($grey, 20%);
-      font-weight: 300;
-      font-size: 1rem;
+      font-weight: normal;
+      // font-size: 1rem;
+    }
+
+    .work-link {
+      @extend .button;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      max-width: 50%;
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .image-figure {
+      margin: em(10px) 0;
     }
 
     .close {
@@ -84,8 +102,8 @@ $work-icon-size: 30px;
     .tile-text,
     .work-tile-link {
       position: absolute;
-      opacity: 0;
-      visibility: hidden;
+      // opacity: 0;
+      // visibility: hidden;
 
       @include transition(all 800ms);
     }
@@ -93,10 +111,10 @@ $work-icon-size: 30px;
     // On item hover
     &:hover {
       &:before,
-      .tile-text,
-      .work-tile-link {
-        opacity: 1;
-        visibility: visible;
+      .tile-text {
+      // .work-tile-link {
+        opacity: 0;
+        visibility: hidden;
       }
     }
 
@@ -106,42 +124,53 @@ $work-icon-size: 30px;
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .tile-text {
-      top: em(10px);
-      right: em(10px);
+      top: 0;
+      left: 0;
+      right: 0;
       color: $white;
 
       .work-item-title,
       .work-item-client {
         display: block;
-        text-align: right;
+        text-align: center;
       }
 
       .work-item-title {
-        font-family: $fontFamilySecondary;
+        // font-family: $fontFamilySecondary;
+        padding: em(5px);
+        border-bottom: 3px solid $white;
+        background: $white;
+        color: $black;
       }
 
       .work-item-client {
-        font-size: 80%;
+        font-size: em(14px);
+        font-style: italic;
       }
     }
 
     .work-tile-link {
-      bottom: em(10px);
-      right: em(10px);
       color: black;
-      text-transform: lowercase;
-      font-size: 80%;
-      background-color: $white;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: transparent;
       border: none;
 
-      &:hover {
-        background-color: $red;
-        color: $white;
+      .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        fill: $white;
       }
+
     }
   }
 
@@ -181,8 +210,7 @@ $work-icon-size: 30px;
 
     .small {
       font-size: 1em;
-      font-weight: 100;
-      font-family: $fontFamilySecondary;
+      font-weight: normal;
     }
   }
 }

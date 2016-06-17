@@ -59,7 +59,7 @@ type: home
 						<span class="work-item-title">{{ project.title }}</span>
 						<span class="work-item-client">{{ project.client }}</span>
 					</div>
-					<a href="#{{project.id}}" data-siteurl="{{site.url}}" class="button work-tile-link">View</a>
+          <a href="#{{project.id}}" data-siteurl="{{site.url}}" class="button work-tile-link"><svg class="icon icon-eye"><use xlink:href="#icon-eye"></use></svg></a>
 				</li>
 				{% assign projects_count = forloop.length %}
 			{% endfor %}
