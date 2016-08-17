@@ -12,8 +12,8 @@ blogroll: true
 	</div>
 
 	<div class="post-summary">
-		<h2 class="post-header"><a href="{{ post.url || prepend: site.url }}">{{ post.title }}</a></h2>
-		<p>{{ post.snippet }} <a href="{{ post.url || prepend: site.url }}" class="post-more">...read more</a></p>
+		<h2 class="post-header"><a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a></h2>
+		<p>{{ post.snippet }} <a href="{{ post.url | prepend: site.url }}" class="post-more">...read more</a></p>
 	</div>
 </div>
 
