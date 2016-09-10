@@ -4,6 +4,11 @@
   background: url(../../orange/assets/img/src/canyon.jpg) no-repeat center center/cover;
   position: relative;
 
+  @media screen and (min-height: 800px) {
+    min-height: 100%;
+    min-height: 100vh;
+  }
+
   &:after {
     content: '';
     position: absolute;
