@@ -1,3 +1,5 @@
+### Note: This project is not currently being actively maintained.
+## Thank you for using the code and if you'd like to be a maintainer please contact me
 ## Orange
 Orange, an open source and free minimal [Jekyll](http://jekyllrb.com) theme. It is a product of my attempt at learning Jekyll. This guide will help you get started with the theme's basic customization and settings.
 
